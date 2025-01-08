@@ -10,11 +10,11 @@ let firstName = 'John';
 let lastName = 'Doe';
 let message = `Hello,${firstName}-${lastName}`
 console.log(message)
-    // Template literal for string interpolation
+// Template literal for string interpolation
 
 // String operations: Methods to manipulate text
 console.log(`The length of ${firstName}:${firstName}`)    // Get string length
-console.log(firstName +" "+ lastName)    // String concatenation
+console.log(firstName + " " + lastName)    // String concatenation
 console.log(`${firstName} ${lastName}`)    // Modern string interpolation
 
 // 2. Numbers: Both integers and decimal values
@@ -23,45 +23,72 @@ let decimal = 3.14    // Floating-point number
 let bigNumber = 94035847399999999n    // BigInt for very large numbers
 
 // 3. Booleans: True/false values for logical operations
+let isLoggedIn = true;
+let hasPermission = false;
 
 
 
 // 4. Undefined and Null: Empty or missing values
-    // Variable declared but not assigned
-    // Intentionally empty value
-
+let undefinedVar    // Variable declared but not assigned
+let emptyValue = null    // Intentionally empty value
+let age = 15
 
 
 // Console Methods: Different ways to output data for debugging
-    // Standard output
-    // Informational output
-    // Warning output
-    // Error output
-    // Tabular data output
+console.log('Basic Log')    // Standard output
+console.info("Info Message")    // Informational output
+console.warn("Warning Message")    // Warning output
+console.error("Error Message")    // Error output
+console.table([
+    { name: "John", age: 15 },
+    { name: "Jane", age: 15 }
+])    // Tabular data output
 
 
 // Template Literals: Advanced string formatting
-
-
+const item = "book";
+const price = 29.99;
+const quantity = 2
 
 // Multiline string with embedded expressions
-
+console.log(`
+    Order Summary:
+    Item: ${item}
+    Price: $${price}
+    Quantity: ${quantity}
+    Total: $${price * quantity}
+    `)
 
 // HTML template example using string interpolation
-
+const html = `
+<div>
+<h1>${firstName}</h1>
+<p>Age: ${age}</p>
+</div>
+`
 
 // Practice Exercise: Applying concepts
-    // User identifier
-    // Age tracking
-    // Subscription status
+const userName = "Your Name" // User identifier
+let userAge = 15// Age tracking
+let isSubrscribed = false// Subscription status
 
 
-    // Product cost
-    // Tax percentage
-    // Total with tax
+const itemPrice = 99.99;// Product cost
+const taxRate = 0.08;// Tax percentage
+let total = itemPrice * quantity *(1+taxRate)
+console.log(`Total: ${total}`) // Total with tax
 
 // Score Tracking: Demonstrating number operations
-    // Initial score
-    // Add bonus points
-    // Subtract penalty
-    // Apply multiplier
+let playerScore = 100; // Initial score
+// playerScore = playerScore +50 // Add bonus points
+playerScore += 50
+
+// playerScore = playerScore - 75
+playerScore -= 75 // Subtract penalty
+
+playerScore *= 2// Apply multiplier
+// playerScore = playerScore * 2
+// playerScore ++ // add 1
+playerScore-- //subtract 1
+
+console.log(`Score:${playerScore}`)
