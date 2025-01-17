@@ -50,5 +50,8 @@ console.log(Boolean("0")); // true
 console.log(Boolean([])); // true
 console.log(Boolean({})); // true
 
-console.log(Boolean("0")); // true or false
-// TRUE
+console.log(Boolean("0")); // true or false | true
+console.log(Boolean("[]")); // true or false | true 
+console.log(Boolean("{}")); // true or false | true
+console.log(Boolean("false")); // true or false | true
+console.log(Boolean(undefined)); // true or false | false   
