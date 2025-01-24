@@ -14,7 +14,7 @@ const num2 = 5.3;
 console.log("Round 5.3:");
 // Try rounding num2 here - should give 5
 
-
+ 
 // 2. Math.ceil() - Always rounds up to next integer
 const price = 99.01;
 console.log("Ceiling of 99.01:");

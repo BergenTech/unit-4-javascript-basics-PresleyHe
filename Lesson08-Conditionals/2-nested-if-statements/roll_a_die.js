@@ -7,9 +7,9 @@ if (diceNumber < 1 || diceNumber > 6) {0
 
 
     else if (diceNumber % 2 === 0) {
-        alert(`${diceNumber}: is even!`)
+        alert(`${diceNumber}: is an even number!`)
     }
     else {
-        alert(`${diceNumber}: is odd!`)
+        alert(`${diceNumber}: is an odd number!`)
     }
     
