@@ -32,7 +32,7 @@ console.log(firstChar)
 console.log(str[str.length-1])
 // - Try accessing position 5
 console.log(str[5])
-
+ 
 // 5. Use escape characters
 // - Create a string with quotes inside
 let quote = "He said \"Hello\""
