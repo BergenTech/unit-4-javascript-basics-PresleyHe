@@ -53,9 +53,9 @@ console.log(letters)
 // Multi-dimensional Arrays
 // Arrays can contain other arrays (2D arrays)
 let board = [
-    ["X", "O", "X"]
-    ["0", "X", "0"]
-    ["X", "O", "X"]
+    ["X", "O", "X"],
+    ["0", "X", "0"],
+    ["X", "O", "X"],
 ]
 console.log(board[0][1]) // O
 console.log(board[2][0]) // X 3rd row first element
