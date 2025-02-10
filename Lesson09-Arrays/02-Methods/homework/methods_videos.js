@@ -178,6 +178,12 @@ console.log(longNameIndex) // returns 0
 
 // 2. MANIPULATION METHODS
 // 2.1 push():
+cities.push("Berlin")
+console.log(cities)
+let newLength = cities.push("Toronto")
+console.log(newLength)
+cities.push(["NJ", "NY"])
+console.log(cities)
 // - Adds one or more elements to the END of an array
 // - Modifies the original array
 // - Returns the new length of the array
@@ -187,18 +193,27 @@ console.log(longNameIndex) // returns 0
 // - Adds one or more elements to the BEGINNING of an array
 // - Shifts existing elements to higher indexes
 // - Returns the new length of the array
+let newStartLength = cities.unshift("Madrid")
+console.log(cities);
+console.log(newStartLength)
 
 
 // 2.3 pop():
 // - Removes the LAST element from an array
 // - Reduces array length by 1
 // - Returns the removed element
-
+cities = ["Paris", "Tokyo", "New York", "London"]
+let lastCity = cities.pop()
+console.log(cities)
+console.log(`The last item removed "${lastCity}"`)
 
 // 2.4 shift():
 // - Removes the FIRST element from an array
 // - Shifts all other elements down
 // - Returns the removed element
+cities = ["Paris", "Tokyo", "New York", "London"]
+let firstCity = cities.shift()
+console.log(`The item removed at the beginning "${firstCity}"`)
 
 
 // 3. TRANSFORMATION METHODS
