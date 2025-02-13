@@ -49,7 +49,8 @@ console.log(fruits)
 let sentence = "JavaScript is fun and challenging";
 // 1. Use the split() method to separate the sentence into an array of words.
 // 2. Log the result.
-
+let array = sentence.split("")
+console.log(array)
 
 // ==============================
 // 4. join() Examples
