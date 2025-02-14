@@ -38,4 +38,4 @@ console.log(multiplied)
 let filtered = multiplied.filter(filtered => filtered > 100)
 console.log(filtered)
 // 3. Convert the filtered array into a string separated by hyphenson"]
-console.log(filtered.join("-"))
+console.log(filtered.join("-")) 
