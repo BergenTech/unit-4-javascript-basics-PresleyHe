@@ -29,7 +29,18 @@ const profiles = {
     }
   };
   
-  
+  // iterate through the profiles 
+let profilesArray = Object.entries(profiles)
+profilesArray.forEach(([username, profile ]) => {
+  // 1 - Print username and follower count
+  console.log(`${username} has ${profile.followers} followers`)
+
+  // 2 - Mark influencer if followers > 1000
+  if(profile.followers > 1000){
+    profile.influencer = true
+  }
+})
+
   
   
   // ========================================================================
