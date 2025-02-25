@@ -82,8 +82,39 @@ profilesArray.forEach(([username, profile ]) => {
   //    - Log the final inventory object
   
   // Write your solution here:
-  
-  
+  let inventory = {
+    electronics: {
+      laptop: { price: 1200, stock: 15 },
+      phone: { price: 800, stock: 25 },
+      tablet: { price: 500, stock: 10 }
+    },
+    clothing: {
+      shirts: { price: 25, stock: 50 },
+      pants: {price: 35, stock: 40 }
+    },
+    books: {
+      fiction: {price: 15, stock: 60},
+      nonfiction: {price: 20, stock: 45}
+    }
+  }  
+
+  // Get all product categories using Object.keys()
+let categories = Object.keys(inventory)
+console.log(categories)
+
+// List all electronics products using Object.keys()
+let electronicsProducts = Object.keys(inventory.electronics)
+console.log(electronicsProducts)
+// update the phone stock to 30
+inventory.electronics.phone.stock = 30
+console.log(inventory.electronics.phone.stock)
+// Add a new product 'headphones' to electronics with price 100 and stock 20
+inventory.electronics.headphones = {price:100, stock: 20}
+console.log(inventory.electronics.headphones)
+// Check if 'laptop' exists in electronics using hasOwnProperty
+console.log(inventory.electronics.hasOwnProperty('laptop'))
+// Log the final inventory object
+console.log(inventory)
   // ========================================================================
   // END OF HOMEWORK
   // ========================================================================
