@@ -120,7 +120,38 @@ console.log(inventory)
   // ========================================================================
 
 
-  
+  let classes = {
+    math: {
+      teacher: 'Mr. Smith',
+      students: ['Alice', 'Bob', 'Charlie']
+    },
+    science: {
+      teacher: 'Ms. Johnson',
+      students: ['Alice', 'David', 'Charlie']
+    },
+    history: {
+      teacher: 'Mr. Brown',
+      students: ['Alice', 'Bob', 'David']
+    }
+  }
+
+  //list all classes
+  console.log(Object.keys(classes))
+
+  //update history teacher to Rosso
+  classes.history.teacher = "Mr. Rosso"
+  console.log(classes.history)
+  console.log(classes.history.teacher)
+
+  //add a new student at the end of the array for history
+classes.history.students.push("newStudent")
+console.log(classes.history)
+console.log(classes.history.students)
+
+  //check if teacher(key) exists in in science class to check the key
+console.log(classes.science.hasOwnProperty("teacher"))
+
+
 
 
 
