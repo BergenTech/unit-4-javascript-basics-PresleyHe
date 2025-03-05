@@ -17,14 +17,18 @@ let totalVowels = 0;
 
 for(const word of words){
     // console.log(word);
+    let vowelsInWord = 0
     for(const letter of word.toLowerCase()){
 // console.log(letter);
 if(vowels.includes(letter)){
     totalVowels++;
+    vowelsInWord++;
 }
     }
-    console.log(`${totalVowels}`);
-    totalVowels = 0;
+    console.log(`${word} has ${vowelsInWord} vowels`);
+    vowelsInWord = 0;
+    // console.log(`${totalVowels}`);
+    // totalVowels = 0;
 }
 console.log("Total vowels", totalVowels)
 
@@ -156,9 +160,16 @@ const cart = {
 };
 
 
-// console.log("Shopping cart items:");
-// let totalCost = 0;
-
+ console.log("Shopping cart items:");
+ let totalCost = 0;
+for(let item in cart) {
+    let price = cart[item];
+    // console.log(price)
+    // console.log(item)
+    console.log(`${item}: ${price}`);
+    totalCost += price
+    console.log(`Total Cost of ${item}:${totalCost}`)
+}
 
 // Loop through each item in the cart
 
@@ -175,3 +186,15 @@ const cart = {
 // milk: $2.50
 // Total cost: $3.95
 
+let names = []
+for(let i=0; i<3; i++){
+    let name = prompt("ENTER A NAME")
+    names.push(name)
+}
+ console.log(names)
+// Name 1 was: John
+// Name 2 was: Alice
+// Name 3 was: Mike
+for(let i=0; i<names.length; i++){
+    console.log(`Name ${i+1} was: ${names[i]}`)
+}
