@@ -46,7 +46,7 @@
 // }
 
 // VID 3
-
+ 
 // for loop = repeat some code a limited amount of times
 
 // for(let i = 100; i >= 0; i--){
