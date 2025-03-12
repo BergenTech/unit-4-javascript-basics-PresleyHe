@@ -102,7 +102,7 @@ socials.forEach(function(item){
 })
 
 let tweitter = socials.forEach(item => {
-    if(item => item[0] === "T"){
+    if(item[0] === "T"){ // Fix the condition here
         console.log(item)
     }
-})
+});
