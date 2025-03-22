@@ -45,3 +45,6 @@ console.log(contains2To4("ooh", 'o'))
 console.log(contains2To4("ooooh", 'o'))
 console.log(contains2To4("oh", 'o'))
 console.log(contains2To4("oooooooh", 'o'))
+
+//-----------------------------------------------
+
