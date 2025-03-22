@@ -1,6 +1,6 @@
 // Reverse  
 
-function reverse_a_number(n) {
+function reverse_a_number(n) { 
     let reversed = "";
     let strNum = n.toString(); // Add parentheses to call the toString method
     for (let i = strNum.length - 1; i >= 0; i--) { // Add curly braces to the for loop
